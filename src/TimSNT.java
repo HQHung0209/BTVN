@@ -2,23 +2,27 @@ import java.util.Scanner;
 
 public class TimSNT {
     public static void main(String[] args) {
-        int n ;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Mời bạn nhập số cần kiểm tra : ");
-        n = scanner.nextInt();
-        if (n < 2){
-            System.out.println("Không phải số nguyên tố");
-        }else if(n==2){
-            System.out.println("2 là số nguyên tố");
-        }
-        else{
-            for ( int i = 2 ; i <= (n-1) ; i++){
-                if( n % i == 0){
-                    System.out.println(" không phải số nguyên tố");
-                }else{
-                    System.out.println(" là số nguyên tố");
-                }
-            }
-        }
+         int value = scanner.nextInt();
+
+         if ( value < 2 ){
+             System.out.println("Số "+value+" không phải là số nguyên tố");
+         }else {
+             int count = 0 ;
+
+             for( int i = 2 ; i < value ; i++){
+                 if( value % i == 0){
+                     count ++;
+                     break;
+                 }
+             }
+
+             if(count == 0){
+                 System.out.println("Số "+value+" là số nguyên tố");
+             }else{
+                 System.out.println("Số "+value+" không phải là số nguyên tố");
+             }
+         }
     }
 }
