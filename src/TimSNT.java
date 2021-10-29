@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Btvn1 {
+public class TimSNT {
     public static void main(String[] args) {
         int n ;
         Scanner scanner = new Scanner(System.in);
