@@ -1,10 +1,32 @@
 package OOPHigher.Inheritance;
 
 public class Animal {
-    String name;
-    int weight;
+    private String name;
+    private int weight;
+
+
+    public Animal(String name , int weight){
+        this.name = name;
+        this.weight = weight;
+    }
 
     public void eat(){
+        System.out.println("Animal eat something");
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
 }
