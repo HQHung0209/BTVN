@@ -3,7 +3,7 @@ package OOPHigher.Interfaces;
 public class Demointerfaces {
     public static void main(String[] args) {
         Authenticate authenticate = new Authenticate();
-        authenticate.handleLogin("hunghq","020920");
+        authenticate.handleLogin("hungâdasq","020920");
     }
 
 }
